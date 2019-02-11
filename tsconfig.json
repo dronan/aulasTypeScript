@@ -1,0 +1,7 @@
+{
+    "noEmmitOnError" : false,
+    "compilerOptions": {
+        "outDir": "dist/"
+    },
+    "compileOnSave": true
+}
