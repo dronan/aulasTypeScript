@@ -1,6 +1,10 @@
 import {Spacecraft, Containership} from './base-ships'
 import {MillenniumFalcon} from './starfighters'
 
+import * as _ from 'lodash'
+
+console.log(_.pad("TS Ex", 40, "="))
+
 let shipClassExample = new Spacecraft('hyperdrive');
 shipClassExample.jumpToHyperspace();
 
