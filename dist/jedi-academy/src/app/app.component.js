@@ -10,6 +10,9 @@ var core_1 = require("@angular/core");
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
         this.title = 'jedi-academy';
+        this.luke = { name: 'Luke', isJedi: true, temple: 'Cosuscant' };
+        this.leia = { name: 'Leia', isJedi: false };
+        this.han = { name: 'Han Solo', isJedi: false };
     }
     AppComponent = __decorate([
         core_1.Component({

@@ -14,10 +14,7 @@ var StudentComponent = /** @class */ (function () {
     };
     __decorate([
         core_1.Input()
-    ], StudentComponent.prototype, "name");
-    __decorate([
-        core_1.Input()
-    ], StudentComponent.prototype, "isJedi");
+    ], StudentComponent.prototype, "student");
     StudentComponent = __decorate([
         core_1.Component({
             selector: 'jad-student',
