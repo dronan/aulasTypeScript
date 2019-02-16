@@ -25,7 +25,9 @@ shipClassExample.jumpToHyperspace();
 var MillenniumFalcon = /** @class */ (function (_super) {
     __extends(MillenniumFalcon, _super);
     function MillenniumFalcon() {
-        return _super.call(this, 'hyperdrive') || this;
+        var _this = _super.call(this, 'hyperdrive') || this;
+        _this.cargoContainers = 2;
+        return _this;
     }
     MillenniumFalcon.prototype.jumpToHyperspace = function () {
         if (Math.random() > 0.5)
@@ -37,3 +39,5 @@ var MillenniumFalcon = /** @class */ (function (_super) {
 }(Spacecraft));
 var falcon = new MillenniumFalcon();
 falcon.jumpToHyperspace();
+var goodForTheJob = function (ship) { return ship.cargoContainers = 2; };
+console.log("Is falcon good for the job? " + goodForTheJob(falcon) + " ?");
