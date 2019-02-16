@@ -2,6 +2,6 @@
   Student: {{student.name}}
 </p>
 
-<div [hidden]="!student.isJedi">
+<div *ngIf="student.isJedi">
  Conteudo para Jedi 
 </div>
