@@ -1,78 +1,12 @@
-let message:string = "Frase qualquer";
+import {Spacecraft, Containership} from './base-ships'
+import {MillenniumFalcon} from './starfighters'
 
-console.log(message);
+let shipClassExample = new Spacecraft('hyperdrive');
+shipClassExample.jumpToHyperspace();
 
-let episode: number = 5;
+let falcon = new MillenniumFalcon();
+falcon.jumpToHyperspace();
 
-console.log(episode);
+const goodForTheJob = (ship: Containership ) => ship.cargoContainers > 2;
 
-episode++
-
-console.log(episode);
-
-
-function useTheForce(name:string):void{
-    console.log('Use the force '+name);
-}
-
-useTheForce('Diego');
-
-let sortestRun = function (parsecs:number):boolean {
-    return parsecs < 12;
-}
-
-console.log(sortestRun(3));
-
-
-let ship:Array<string> = ['ship', 'shipFighter']
-let ties = ship.filter ( item => item === 'shipFighter')
-console.log(ties[0]);
-
-
-
-
-let nomeDaFuncao:(variavelDeEntrada:string) => void;
-
-    nomeDaFuncao = name => console.log("Do you copy, "+ name +"?")
-
-    nomeDaFuncao("Diego");
-
-
-
-function inc(speed:number, inc?:number):number {
-    let i = inc || 1;
-    return speed + i;
-}
-
-console.log(`inc(5,1): ${inc(5,1)}`);
-console.log(`inc(5): ${inc(5)}`);
-
-function inc2(speed:number, inc:number = 1):number {
-    return speed + inc;
-}
-
-
-
-function countJedis(jedis:number[]):number {
-    return jedis.reduce((a,b) => a+b, 0)
-}
-
-console.log(countJedis([2,3,4]));
-
-
-// rest, nao é necessarios informar o array ao chamar a funcao
-function countJedis2(...jedis:number[]):number {
-    return jedis.reduce((a,b) => a+b, 0)
-}
-
-console.log(countJedis2(2,3,4));
-
-
-
-let isEnoughToBeatMF = function(parsecs: number):boolean {
-    return parsecs < 12;
-}
-
-let distance = 14;
-
-console.log(`Is ${distance} parsecs enought beat Millenium Falcon? ${isEnoughToBeatMF(distance) ? 'YES'  :  'NO' }`);
+console.log(`Is falcon good for the job? ${goodForTheJob(falcon) ? 'yes' : 'no'}`);
