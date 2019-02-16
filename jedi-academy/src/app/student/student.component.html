@@ -1,9 +1,10 @@
 <div *ngIf="student">
 
-  Student: {{student?.name}}
+  Student: <a href="#" (click)="metodoClicked()">{{student?.name}}</a>
 
 <div *ngIf="student?.isJedi">
- Jedi temple: {{student?.temple}}
+ Jedi temple: {{student?.temple}}<br> <button (click)= "referenciaDaTextArea.focus()">Focar Textarea</button> <br> 
+ <textarea #referenciaDaTextArea></textarea>
 </div>
 
 </div>

@@ -12,6 +12,9 @@ var StudentComponent = /** @class */ (function () {
     }
     StudentComponent.prototype.ngOnInit = function () {
     };
+    StudentComponent.prototype.metodoClicked = function () {
+        console.log("Student: " + this.student.name);
+    };
     __decorate([
         core_1.Input()
     ], StudentComponent.prototype, "student");
