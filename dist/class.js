@@ -6,5 +6,5 @@ var shipClassExample = new base_ships_1.Spacecraft('hyperdrive');
 shipClassExample.jumpToHyperspace();
 var falcon = new starfighters_1.MillenniumFalcon();
 falcon.jumpToHyperspace();
-var goodForTheJob = function (ship) { return ship.cargoContainers = 2; };
-console.log("Is falcon good for the job? " + goodForTheJob(falcon) + " ?");
+var goodForTheJob = function (ship) { return ship.cargoContainers > 2; };
+console.log("Is falcon good for the job? " + (goodForTheJob(falcon) ? 'yes' : 'no'));

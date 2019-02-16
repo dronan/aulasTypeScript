@@ -7,6 +7,6 @@ shipClassExample.jumpToHyperspace();
 let falcon = new MillenniumFalcon();
 falcon.jumpToHyperspace();
 
-const goodForTheJob = (ship: Containership ) => ship.cargoContainers = 2;
+const goodForTheJob = (ship: Containership ) => ship.cargoContainers > 2;
 
-console.log(`Is falcon good for the job? ${goodForTheJob(falcon)} ?`);
+console.log(`Is falcon good for the job? ${goodForTheJob(falcon) ? 'yes' : 'no'}`);
